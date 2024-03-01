@@ -17,11 +17,11 @@ function SignIn({ setIsSignedIn }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await apiClient.post('/api/login', { email, password});
+      const response = await apiClient.post('/api/login', { email, password });
       console.log(response.data);
       dispatch(setUsers(response.data));
       console.log(data)
-      if(response.data.token==='QpwL5tke4Pnpja7X4'){
+      if (response.data.token === 'QpwL5tke4Pnpja7X4') {
         setIsSignedIn(true);
         navigate('/dashboard');
       }

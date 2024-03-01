@@ -9,7 +9,7 @@ const Modal = ({ loginError, setLoginError }) => {
       const timer = setTimeout(() => {
         setShow(false);
         setLoginError(null);
-      }, 2000); 
+      }, 2000);
       return () => clearTimeout(timer);
     }
   }, [loginError]);

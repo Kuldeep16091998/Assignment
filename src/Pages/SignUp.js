@@ -26,9 +26,9 @@ const SignUp = () => {
     }
   };
 
-  const title="REGISTER";
+  const title = "REGISTER";
 
-  const props={
+  const props = {
     email,
     password,
     setEmail,
